@@ -325,6 +325,24 @@ export const myOverseasExperiences: OverseasExperience[] = [
 ];
 export const myProjects: Project[] = [
     {
+        "name": "수의사 보호자 간 문진표 자동 개발 및 RAG 기반 챗봇 개발",
+        "period": {
+            "start": "2025-04",
+            "end": "2025-06"
+        },
+        "description": "수의사 보호자 간 대화 내용 STT 및 파일 업로드 기능을 통해 문진표 자동 개발 및 RAG 기반 챗봇 개발",
+        "role": "백엔드 리드 개발자",
+        "teamSize": 3,
+        "skills": [
+            "Kotlin", "MSA", "Eureka Server", "Kafka", "Docker", "Kubernetes", "GCP", "CI/CD",
+            "Compute Engine", "Zeplin", "JPA", "MySQL", "Spring Boot", "Spring Security", "Spring Cloud", "Spring Cloud Gateway", "MongoDB", "Redis", "OpenAI", "LLM", "RAG"
+        ],
+        "achievements": [
+            "MSA 구조 기반 백엔드 시스템 구축",
+            "Kafka 메시지 큐를 활용한 데이터 처리 최적화",
+        ],
+    },
+    {
         "name": "반려동물 토탈 케어 모바일 플랫폼 개발",
         "period": {
             "start": "2024-12",
