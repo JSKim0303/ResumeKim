@@ -335,11 +335,16 @@ export const myProjects: Project[] = [
         "teamSize": 3,
         "skills": [
             "Kotlin", "MSA", "Eureka Server", "Kafka", "Docker", "Kubernetes", "GCP", "CI/CD",
-            "Compute Engine", "Zeplin", "JPA", "MySQL", "Spring Boot", "Spring Security", "Spring Cloud", "Spring Cloud Gateway", "MongoDB", "Redis", "OpenAI", "LLM", "RAG"
+            "Compute Engine", "Zeplin", "JPA", "MySQL", "Spring Boot", "Spring Security", "Spring Cloud", "Spring Cloud Gateway", "MongoDB", "Redis", "OpenAI", "LLM", "RAG", "QDRANT"
         ],
         "achievements": [
-            "MSA 구조 기반 백엔드 시스템 구축",
-            "Kafka 메시지 큐를 활용한 데이터 처리 최적화",
+            "MSA 구조 기반 백엔드 시스템 설계 및 구축 (Eureka, Kafka, Redis, Spring Cloud 활용)",
+            "Kafka 기반 이벤트 스트리밍으로 STT 요청 및 응답 처리 파이프라인 구현",
+            "OpenAI Whisper 기반 STT 처리로 수의사-보호자 간 대화 텍스트화 자동화",
+            "프롬프트 기반 요약 시스템 설계로 STT 결과를 문진표 형태로 자동 구성",
+            "기존 수의학 문서 데이터를 Qdrant 벡터 DB에 저장하여 RAG 기반 질의응답 시스템 구축",
+            "LLM 기반 챗봇 설계 및 구현으로 보호자 질문에 대한 실시간 문서 기반 응답 지원",
+            "Docker, Kubernetes, GCP를 활용한 클라우드 기반 배포 및 운영 자동화 (CI/CD 적용)"
         ],
     },
     {
