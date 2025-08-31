@@ -7,35 +7,23 @@ interface CareerHistoryProps {
 }
 export const CareerHistory = ({ careers }: CareerHistoryProps) => {
     const calculateTotalExperience = (careers: Career[]) => {
-        const periods = careers.map(career => ({
-            start: new Date(career.period.start + '-01'),
-            end: career.period.end === '현재'
-                ? new Date()
-                : new Date(career.period.end + '-01')
-        })).sort((a, b) => a.start.getTime() - b.start.getTime());
-
-        let totalMonths = 0;
-        let currentEnd = periods[0].end;
-
-        totalMonths += (periods[0].end.getFullYear() - periods[0].start.getFullYear()) * 12
-            + (periods[0].end.getMonth() - periods[0].start.getMonth());
-
-        for (let i = 1; i < periods.length; i++) {
-            if (periods[i].start > currentEnd) {
-                totalMonths += (periods[i].end.getFullYear() - periods[i].start.getFullYear()) * 12
-                    + (periods[i].end.getMonth() - periods[i].start.getMonth());
-            } else {
-                if (periods[i].end > currentEnd) {
-                    totalMonths += (periods[i].end.getFullYear() - currentEnd.getFullYear()) * 12
-                        + (periods[i].end.getMonth() - currentEnd.getMonth());
-                }
-            }
-            currentEnd = new Date(Math.max(currentEnd.getTime(), periods[i].end.getTime()));
-        }
-
+        if (careers.length === 0) return '0년 0개월';
+        
+        const earliestStart = careers.reduce((earliest, career) => {
+            const startDate = new Date(career.period.start + '-01');
+            return startDate < earliest ? startDate : earliest;
+        }, new Date(careers[0].period.start + '-01'));
+        
+        console.log(earliestStart);
+        
+        const currentDate = new Date();
+        
+        const totalMonths = (currentDate.getFullYear() - earliestStart.getFullYear()) * 12
+            + (currentDate.getMonth() - earliestStart.getMonth());
+        
         const years = Math.floor(totalMonths / 12);
         const remainingMonths = totalMonths % 12;
-
+        
         return `${years}년 ${remainingMonths}개월`;
     };
 

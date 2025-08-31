@@ -56,17 +56,96 @@ export const myCoreCompetencies: CoreCompetency[] = [
 
 export const myCareer: Career[] = [
     {
+        "company": {
+            "name": "비상교육(주)",
+            "description": "교육용 AI Agent 시스템 개발 프로젝트",
+            "employeeCount": 1000,
+            "mainBusiness": "AI Agent 백엔드 시스템 및 교육 플랫폼 개발"
+        },
+        "position": "백엔드 서버 개발자 (프리랜서 계약)",
+        "department": "교육용 AI Agent 프로젝트",
+        "period": {
+            "start": "2025-08",
+            "end": "현재"
+        },
+        "mainTasks": [
+            {
+                "description": "Java Spring Boot 기반 교육용 AI Agent 백엔드 아키텍처 설계 및 개발",
+                "skills": ["Java 17+", "Spring Boot 3.x", "Spring Security", "JPA/Hibernate", "REST API"]
+            },
+            {
+                "description": "마이크로서비스 구조 설계 및 외부 AI 서비스(OpenAI, Claude, LangChain) 연동",
+                "skills": ["Java", "Spring Boot", "Microservices", "LangChain", "OpenAI API", "Claude API"]
+            },
+            {
+                "description": "교육 콘텐츠(영상, 문서 등) 데이터 처리 파이프라인 및 API 개발",
+                "skills": ["Java", "REST API", "MariaDB", "Redis", "Vector DB(Qdrant)", "Spring Boot"]
+            },
+            {
+                "description": "AWS 클라우드 환경 기반 인프라 설계 및 운영 (EKS, EC2, S3, RDS, Lambda)",
+                "skills": ["AWS", "Docker", "Kubernetes", "CI/CD (Jenkins)", "GitHub/GitLab"]
+            }
+        ],
+        "achievements": [
+            "RAG 기반 질의응답 및 개인화 학습 지원 기능을 반영한 백엔드 시스템 개발",
+            "대용량 데이터 최적화를 위한 MariaDB/Redis 기반 데이터베이스 설계 및 운영",
+            "EKS 기반의 클라우드 네이티브 배포 환경 구축 및 자동화",
+            "AI 서비스(LangChain, OpenAI, Claude) 연동을 통한 스마트 학습 지원 기능 구현",
+            "안정성과 확장성을 고려한 마이크로서비스 아키텍처 설계 및 구축"
+        ]
+    }
+    ,
+    {
+        "company": {
+            "name": "(유)앤서스랩코리아",
+            "description": "글로벌 iGaming 솔루션 개발 스튜디오",
+            "employeeCount": 700,
+            "mainBusiness": "iGaming 플랫폼 및 게임 서버 개발"
+        },
+        "position": "Java 백엔드 서버 개발자 (플랫폼 GP팀)",
+        "department": "Platform GP팀",
+        "period": {
+            "start": "2025-06",
+            "end": "2025-08"
+        },
+        "mainTasks": [
+            {
+                "description": "통합 인증 및 사용자 관리 플랫폼 API 설계 및 구현",
+                "skills": ["Java", "Spring Boot", "Spring Security", "JWT", "MySQL", "MyBatis", "Spring AOP", "REST API"]
+            },
+            {
+                "description": "게임 서버와 사용자 정보 간 데이터 연동 시스템 개발 및 최적화",
+                "skills": ["Java", "REST API", "MySQL", "MyBatis", "Redis", "Spring AOP"]
+            },
+            {
+                "description": "게임 데이터 기반 보상 로직 및 프로모션 서비스 백엔드 설계",
+                "skills": ["Spring Boot", "Scheduler", "Kafka", "MySQL", "MyBatis", "Spring AOP", "REST API"]
+            },
+            {
+                "description": "배포 자동화를 위한 CI/CD 파이프라인 구성 및 유지보수",
+                "skills": ["TeamCity", "Docker", "GitHub Actions", "AWS", "ARGO"]
+            }
+        ],
+        "achievements": [
+            "게임 사용자 수 증가에 대응하기 위한 MSA 아키텍처 기반 인증 시스템 분리 및 확장",
+            "Redis 기반 세션 클러스터링 및 캐싱 전략 도입으로 응답 속도 개선",
+            "Kafka 기반 이벤트 수집 시스템 도입으로 실시간 보상 처리 구조 구현",
+            "테스트 코드 커버리지 유지하며 안정적인 기능 개발 및 운영",
+            "플랫폼 트래픽 피크 타임 대비 로드 밸런싱 및 장애 자동 복구 시스템 적용"
+        ]
+    },
+    {
         company: {
             name: '(주)에이아이포펫',
             description: '반려동물 케어 AI 솔루션 개발 기업',
             employeeCount: 40,
             mainBusiness: '반려동물 헬스케어 앱 및 AI 플랫폼 개발'
         },
-        position: '선임 개발자',
+        position: '개발팀장',
         department: '서비스 개발팀',
         period: {
-            start: '2023-10',
-            end: '현재'
+            start: '2024-10',
+            end: '2025-06'
         },
         mainTasks: [
             {
@@ -83,8 +162,8 @@ export const myCareer: Career[] = [
             }
         ],
         achievements: [
-            '마이크로서비스 아키텍처 도입으로 서비스 확장성 및 안정성 40% 개선',
-            '웹/모바일 통합 사용자 경험 설계로 고객 유지율 35% 향상',
+            '마이크로서비스 아키텍처 도입으로 서비스 확장성 및 안정성 개선',
+            '웹/모바일 통합 사용자 경험 설계로 고객 유지율 향상',
             '반려동물 건강 데이터 실시간 동기화 시스템 구축으로 사용자 만족도 증가',
             '백엔드-프론트엔드-모바일 통합 CI/CD 파이프라인 구축으로 배포 주기 단축'
         ]
@@ -99,8 +178,8 @@ export const myCareer: Career[] = [
         position: '선임 개발자',
         department: 'IT 시스템팀',
         period: {
-            start: '2022-03',
-            end: '2023-09'
+            start: '2023-03',
+            end: '2024-09'
         },
         mainTasks: [
             {
@@ -118,10 +197,10 @@ export const myCareer: Career[] = [
         ],
         achievements: [
             '비대면 금융 서비스를 위한 인증 시스템 구축(1원 인증, 신분증 인증, 소득스크래핑, 법인등기부등본 조회)',
-            '고객 편의성 향상을 위한 기능 개발(부분 납부, 결제일 변경, 정산서 발급)으로 고객 만족도 30% 증가',
-            '딜러 모바일 웹 성능 최적화로 거래 처리 속도 40% 개선',
-            '승계, 재금융 프로세스 디지털화로 처리 시간 50% 단축',
-            '비대면 거래를 위한 데이터 인터페이스 구축으로 디지털 계약 체결률 45% 향상'
+            '고객 편의성 향상을 위한 기능 개발(부분 납부, 결제일 변경, 정산서 발급)으로 고객 만족도 증가',
+            '딜러 모바일 웹 성능 최적화로 거래 처리 속도 개선',
+            '승계, 재금융 프로세스 디지털화로 처리 시간 단축',
+            '비대면 거래를 위한 데이터 인터페이스 구축으로 디지털 계약 체결률 향상'
         ]
     },
     {
@@ -139,7 +218,7 @@ export const myCareer: Career[] = [
         },
         mainTasks: [
             {
-                description: '고객 모바일 앱(마이벤츠) 신규 기획 및 개발',
+                description: '고객 모바일 환경 신규 기획 및 개발',
                 skills: ['Java', 'Spring', 'MSSQL', 'Docker']
             },
             {
@@ -152,11 +231,10 @@ export const myCareer: Career[] = [
             }
         ],
         achievements: [
-            '마이벤츠 모바일 앱 성공적 런칭으로 디지털 채널 이용 고객 60% 증가',
-            '고객 적합성 검사 시스템 설계부터 개발까지 주도하여 법적 컴플라이언스 100% 달성',
+            '고객 적합성 검사 시스템 설계부터 개발까지 주도하여 법적 컴플라이언스 달성',
             '독일 레거시 시스템과의 인터페이스 구축 및 JSON 데이터 구조 설계로 글로벌 시스템 통합',
-            '도커 기반 컨테이너화로 배포 프로세스 자동화 및 시스템 안정성 35% 향상',
-            '딜러 모바일 웹 개선으로 계약 체결 프로세스 소요 시간 45% 단축'
+            '도커 기반 컨테이너화로 배포 프로세스 자동화 및 시스템 안정성 향상',
+            '딜러 모바일 웹 개선으로 계약 체결 프로세스 소요 시간 단축'
         ]
     },
     {
@@ -188,10 +266,10 @@ export const myCareer: Career[] = [
         ],
         achievements: [
             '계정계 시스템 안정화로 월 결산 처리 시간 30% 단축',
-            '로우디바이스 기반 서버-스토리지 간 볼륨 정책 최적화로 시스템 성능 25% 향상',
+            '로우디바이스 기반 서버-스토리지 간 볼륨 정책 최적화로 시스템 성능 향상',
             'Windows Server 2008에서 2016으로 전체 시스템 마이그레이션 성공적 완료',
             '금감원 보안 정책 준수를 위한 시스템 개선으로 감사 평가 최고 등급 획득',
-            'Oracle DBA 역할 수행으로 데이터베이스 성능 튜닝 및 가용성 40% 개선'
+            'Oracle DBA 역할 수행으로 데이터베이스 성능 튜닝 및 가용성 개선'
         ]
     },
     {
@@ -226,10 +304,10 @@ export const myCareer: Career[] = [
             }
         ],
         achievements: [
-            '나이스, 신용정보원 연계 금융자산정보 인터페이스 구축으로 데이터 정확성 95% 향상',
-            '물리적 망분리 프로젝트 애플리케이션 파트 주도로 금융보안 규정 100% 준수 달성',
-            '개발, 운영, 스테이징 환경 간 네트워크 정책 정의 및 구현으로 보안 취약점 70% 감소',
-            'MSSQL 저장 프로시저 기반 회계 시스템 최적화로 월 마감 처리 시간 35% 단축',
+            '나이스, 신용정보원 연계 금융자산정보 인터페이스 구축으로 데이터 정확성 향상',
+            '물리적 망분리 프로젝트 애플리케이션 파트 주도로 금융보안 규정 준수 달성',
+            '개발, 운영, 스테이징 환경 간 네트워크 정책 정의 및 구현으로 보안 취약점 감소',
+            'MSSQL 저장 프로시저 기반 회계 시스템 최적화로 월 마감 처리 시간 단축',
             '쉐어포인트 기반 홈페이지 개발로 내부 직원 접근성 및 전자 결재 강화'
         ]
     }
@@ -325,6 +403,31 @@ export const myOverseasExperiences: OverseasExperience[] = [
 ];
 export const myProjects: Project[] = [
     {
+        "name": "교육용 AI Agent 시스템 백엔드 개발",
+        "period": {
+            "start": "2025-08",
+            "end": "2025-11"
+        },
+        "description": "RAG 기반 질의응답, 개인화 학습 지원, 콘텐츠 데이터 처리 등을 핵심으로 하는 교육용 AI Agent 백엔드 시스템 개발",
+        "role": "백엔드 서버 개발자 (프리랜서 계약)",
+        "teamSize": 5,
+        "skills": [
+            "Java", "Spring Boot", "Spring Security", "JPA/Hibernate", "REST API",
+            "MariaDB", "Redis", "Vector DB(Qdrant)", "Docker", "Kubernetes",
+            "AWS (EKS, EC2, S3, RDS, Lambda)", "LangChain", "OpenAI API", "Claude API",
+            "CI/CD (Jenkins)", "GitHub", "GitLab"
+        ],
+        "achievements": [
+            "Java Spring Boot 기반 백엔드 아키텍처 설계 및 구현",
+            "마이크로서비스 구조 설계 및 구축으로 확장성과 안정성 강화",
+            "교육 콘텐츠(영상, 문서) 처리 파이프라인 및 사용자 요청 처리 API 개발",
+            "MariaDB/Redis 기반 대용량 데이터 처리 및 최적화",
+            "LangChain, OpenAI, Claude API 연동을 통한 스마트 학습 지원 기능 구현",
+            "AWS EKS 기반 클라우드 네이티브 배포 및 자동화 환경 구축",
+            "Docker/Kubernetes 기반 CI/CD 파이프라인 설계 및 운영"
+        ]
+    },
+    {
         "name": "수의사 보호자 간 문진표 자동 개발 및 RAG 기반 챗봇 개발",
         "period": {
             "start": "2025-04",
@@ -346,6 +449,29 @@ export const myProjects: Project[] = [
             "LLM 기반 챗봇 설계 및 구현으로 보호자 질문에 대한 실시간 문서 기반 응답 지원",
             "Docker, Kubernetes, GCP를 활용한 클라우드 기반 배포 및 운영 자동화 (CI/CD 적용)"
         ],
+    },
+    {
+        "name": "반려동물 스캔 데이터 기반 제품 추천 및 사용자 행동 분석 ETL 시스템 구축",
+        "period": {
+            "start": "2025-01",
+            "end": "2025-06"
+        },
+        "description": "반려동물 스캔 SDK에서 수집된 데이터를 Snowflake 기반으로 ETL 처리하여 사용자 맞춤 추천 및 행동 분석에 최적화된 데이터 웨어하우스 구축",
+        "role": "데이터 파이프라인 및 백엔드 시스템 리드 개발자",
+        "teamSize": 4,
+        "skills": [
+            "Kotlin", "Spring Boot", "Kafka", "Redis", "MongoDB", "MySQL",
+            "Snowflake", "dbt", "SQL", "Docker", "CI/CD"
+        ],
+        "achievements": [
+            "Kafka를 통해 반려동물 스캔 SDK의 스캔 결과 및 사용자 행동 로그를 실시간 수집 (Extract)",
+            "Spring Boot 마이크로서비스에서 수집 데이터를 전처리하여 staging 테이블 구조에 맞춰 정제 (Transform)",
+            "정제된 데이터를 Snowflake에 적재하고, dbt를 통해 모델링 및 가공 로직을 모듈화하여 관리 (Load)",
+            "스캔 이력, 사용자 행동, 제품 정보 간 관계를 고려한 추천용 골드 레이어 테이블 생성",
+            "사용자의 최근 행동(스캔 빈도, 선호 제품군 등)을 기준으로 추천 우선순위를 자동 계산하는 SQL 모델 구현",
+            "dbt 테스트 및 문서화를 통해 ETL 품질 확보 및 재현 가능한 데이터 파이프라인 구성",
+            "제품팀 및 마케팅팀에서 실시간으로 활용 가능한 추천 결과 뷰 및 사용자 통계 뷰 제공"
+        ]
     },
     {
         "name": "반려동물 토탈 케어 모바일 플랫폼 개발",
@@ -464,6 +590,29 @@ export const myProjects: Project[] = [
         ]
     },
     {
+        "name": "대용량 계정계 원장 관리 시스템 배치 기반 ETL 및 분석 마트 구축",
+        "period": {
+            "start": "2023-10",
+            "end": "2024-02"
+        },
+        "description": "Oracle DB에 저장된 원장 데이터를 주기적으로 수집 및 정제하여 AWS 기반 분석 마트에 적재하고, 사용자 실시간 조회에 활용 가능한 데이터 인프라를 구축",
+        "role": "ETL 및 백엔드 시스템 리드 개발자",
+        "teamSize": 4,
+        "skills": [
+            "Java", "Spring Batch", "MyBatis", "Oracle DB",
+            "AWS Data Pipeline", "Amazon Redshift", "Redshift Spectrum", "S3",
+            "데이터 마트 설계", "데이터 정합성 관리", "대용량 배치 처리", "SQL 최적화", "보안/권한 제어"
+        ],
+        "achievements": [
+            "Oracle DB에 저장된 원장 트랜잭션 데이터를 기준으로 일 배치 기반 ETL 파이프라인 설계 및 구현",
+            "Spring Batch와 AWS Data Pipeline을 조합하여 정제된 데이터를 S3에 저장하고 Redshift에 적재",
+            "Amazon Redshift Spectrum을 활용해 S3에 저장된 원본 데이터를 직접 조회 가능한 데이터 레이크 구성",
+            "트랜잭션 합계, 사용자 잔액, 일자별 거래 패턴 등 다양한 분석 데이터를 마트 구조로 설계 및 제공",
+            "Redshift 최적화 테이블 설계로 조회 성능 향상 및 실시간 응답 지연 최소화",
+            "원장 정합성 검증을 위한 자동 비교 로직 및 실패 처리 리포트 시스템 구축"
+        ]
+    },
+    {
         "name": "개인 정보 스크래핑 기반 대출 적정성 평가 시스템",
         "period": {
             "start": "2023-05",
@@ -483,6 +632,29 @@ export const myProjects: Project[] = [
             "고객용 모바일 웹뷰 인터페이스 설계 및 반응형 UI 개발",
             "딜러용 관리자 대시보드 개발로 고객 데이터 통합 조회 환경 제공",
             "대용량 데이터 처리를 위한 비동기 처리 아키텍처 설계로 처리 속도 개선"
+        ]
+    },
+    {
+        "name": "개인정보 스크래핑 기반 대출 적정성 평가 시스템 및 분석 데이터 마트 구축",
+        "period": {
+            "start": "2023-05",
+            "end": "2023-12"
+        },
+        "description": "스크래핑된 개인정보 데이터를 주기적으로 배치 처리하여 AWS Redshift에 적재하고, 대출 적정성 평가 로직을 반영한 데이터 마트를 구축하여 다양한 사용자 뷰 제공",
+        "role": "백엔드 및 데이터 마트 설계 리드",
+        "teamSize": 4,
+        "skills": [
+            "Java", "Spring Boot", "Spring Batch", "MyBatis", "Oracle DB",
+            "AWS Data Pipeline", "Amazon Redshift", "Redshift Spectrum", "S3",
+            "데이터 정제", "보안 처리", "REST API", "WebView 최적화", "Jenkins"
+        ],
+        "achievements": [
+            "외부 시스템에서 스크래핑된 고객 정보를 Oracle DB에 저장하고 이를 기반으로 주기적 배치 처리 흐름 구성",
+            "Spring Batch와 AWS Data Pipeline을 연계하여 정제된 데이터를 Redshift에 자동 적재",
+            "스크래핑 원본 데이터는 S3에 저장하고, Redshift Spectrum을 통해 직접 조회 가능한 분석 체계 구현",
+            "소득, 직업, 주소 정보를 기반으로 산출한 적정 대출금 결과를 마트 테이블로 구성",
+            "보호가 필요한 개인정보 컬럼에 대해 AES256 기반 암호화 및 접근 제어 정책 적용",
+            "대출 심사자 및 딜러가 활용할 수 있는 통계 뷰와 사용자 조회 API 연동"
         ]
     },
     {
